@@ -33,7 +33,7 @@ if (!process.env.JWTTOKEN) {
 }
 
 //connect to mongoDB
-mongoose.connect( `mongodb+srv://waldo:${process.env.DB_PASS}@imageapp-qakfl.mongodb.net/test?retryWrites=true&w=majority`
+mongoose.connect(process.env.DB_PASS
 	, { useNewUrlParser: true })
 	.then(() => console.log('connected to DataBase successfully!'))
 	.catch(err => console.log(`Could not connect to DataBase: ${err}`));

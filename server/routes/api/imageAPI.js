@@ -21,7 +21,7 @@ router.post('/', multer.upload.single('file'), async (req, res) => {
 		brand: req.body.brand,
 		category: req.body.category,
 		description: req.body.description,
-		price: parseInt(req.body.price),
+		price: parseInt(req.body.price), 
 		cost: parseInt(req.body.cost),
 		image: newId,
 	};
